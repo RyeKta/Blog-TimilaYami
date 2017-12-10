@@ -1,0 +1,37 @@
+/* Color pallette */
+$astronaut: #293e6a;
+$chambray: #3b5998;
+$malibu: #74aaf7;
+$silvertree: #77ba9b;
+$husk: #b6a754;
+$heading-hover-color: lighten($astronaut, 25%);
+$white : lighten($chambray, 58%);
+
+$base-font-serif: 'Roboto','Times New Roman', Times, serif;
+$base-font-sans-serif: 'Raleway', Arial, Helvetica, sans-serif;
+
+/* ==========================================================================
+	Typesetting for Blog 
+	Author:   Krishna Rai
+	Date:     2 June 2017 http://www.modularscale.com/?20,14&px&1.25 @ 1:1.25
+   ========================================================================== */
+$base-text-color: darken($chambray, 20%) !default;
+$base-font-size: 14px !default;
+$base-line-height: 1.286em !default;
+$base-font-family: $base-font-serif;
+
+$vertical-rhythm: $base-line-height;
+
+/* Link */
+$base-link-color: saturate($chambray, 31%);
+
+/*Heading*/
+$h1-font-size: 2.441em;
+$h2-font-size: 1.953em;
+$h3-font-size: 1.563em;
+$h4-font-size: 1.25em;
+$h5-font-size: 1em;
+$h6-font-size: 1em;
+
+$heading-font-family: $base-font-sans-serif;
+$heading-color: inherit !default;

@@ -1,0 +1,17 @@
+//font mixin
+@mixin font($font-size, $line-height, $font-weight:normal) {
+  font-size:$font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+//Line Clamp
+@mixin line-clamp ($lineheight, $maxlines) {
+	overflow: hidden;
+	line-height: $lineheight;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	max-height: $lineheight * $maxlines;/* fallback */
+	-webkit-line-clamp: $maxlines; /* number of lines to show */
+	-webkit-box-orient: vertical;
+}

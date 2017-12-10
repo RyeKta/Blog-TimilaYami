@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+	<title>Album Title | Timila Yami Thapa</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700|Roboto+Slab:300,400,700" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col l8 offset-l4">
+					<nav class="navbar">
+						<a href="#" class="nav-opener">
+							<span></span>
+						</a>
+						<div class="drop">
+							<ul id="nav">
+								<li class="active">
+									<a href="#">Home</a>
+								</li>
+								<li>
+									<a href="#">Archieve</a>
+								</li>
+								<li>
+									<a href="#">About</a>
+								</li>
+								<li>
+									<a href="#">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main id="main" role="main">
+		<div class="album-container">
+			<div class="album-toolbar">
+				<a href="#" class="back-to-album"><i class="icon material-icons">keyboard_arrow_left</i>Back to album list</a>
+			</div>
+			<!-- Gallery header -->
+			<div class="album-header">
+				<div class="album-cover">
+					<img src="https://placehold.it/1200x900.jpg" alt="">
+				</div>
+				<div class="album-content">
+					<h1 class="album-title">Album title</h1>
+				</div>
+			</div>
+			<!-- Photo List -->
+			<div class="photo-list">
+				<div class="container">
+					<div class="row">
+						<div class="photo-list-photo col m6 l4 xl3">
+							<a href="https://placehold.it/1200x900.jpg" data-fancybox="group" data-caption="Captio 1">
+								<img src="https://placehold.it/640x480.jpg" alt="">
+							</a>
+						</div>
+						<div class="photo-list-photo col m6 l4 xl3">
+							<a href="https://placehold.it/1200x900.jpg" data-fancybox="group" data-caption="Captio 2">
+								<img src="https://placehold.it/640x480.jpg" alt="">
+							</a>
+						</div>
+						<div class="photo-list-photo col m6 l4 xl3">
+							<a href="https://placehold.it/1200x900.jpg" data-fancybox="group" data-caption="Captio 3">
+								<img src="https://placehold.it/640x480.jpg" alt="">
+							</a>
+						</div>
+						<div class="photo-list-photo col m6 l4 xl3">
+							<a href="https://placehold.it/1200x900.jpg" data-fancybox="group" data-caption="Captio 4">
+								<img src="https://placehold.it/640x480.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</main>
+	<footer id="footer">
+		<div class="footer-holder">
+			<div class="container">
+				<span class="copyright">
+					&copy; 2015-2017 Timila Yami Thapa
+				</span>
+				<ul class="nav">
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">About</a>
+					</li>
+					<li>
+						<a href="#">Archieve</a>
+					</li>
+					<li>
+						<a href="#">Contact me</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.main.js"></script>
+	<script>
+		$('[data-fancybox').fancybox({
+			loop: true,
+			thumbs : {
+				autoStart : true
+			}
+		});
+	</script>
+</body>
+</html>

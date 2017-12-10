@@ -1,0 +1,8 @@
+//Folders
+
+.sass-cache/
+
+//Files
+
+*.map
+*.dmp

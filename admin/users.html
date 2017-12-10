@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+	<title>Users</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600|Roboto+Slab:300,400,700" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jq-2.2.4/dt-1.10.15/datatables.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div class="sidenav side-nav fixed" id="slide-out">
+				<nav class="main-nav">
+					<ul>
+						<li class="user-panel">
+							<span class="img-holder">
+								<img src="http://placehold.it/200x200.jpg" alt="" class="circle responsive-image">
+							</span>
+							<div class="popup-holder">
+								<a class='btn-flat waves-effect waves-light profile-opener' href='#' data-activates='profile-dropdown'>
+									Krishna Rai
+									<i class="material-icons right">arrow_drop_down</i>
+								</a>
+								<span class="user-role grey-text grey-darken-2">Administrator</span>
+								<ul id='profile-dropdown' class='dropdown-content'>
+									<li><a href="#">
+										<i class="material-icons">face</i>
+										Profile
+									</a></li>
+									<li><a href="#">
+										<i class="material-icons">settings</i>
+										Setting
+									</a></li>
+									<li>
+										<a href="#">
+											<i class="material-icons">keyboard_tab</i>
+											Logout
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="active">
+							<a href="#" class="waves-effect waves-cyan">
+								<i class="material-icons icon">view_quilt</i>
+								Dashboard
+							</a>
+						</li>
+						<li>
+							<a href="#" class="waves-effect waves-cyan">
+								<i class="material-icons icon">view_day</i>
+								Blog
+							</a>
+						</li>
+						<li>
+							<a href="#" class="waves-effect waves-cyan">
+								<i class="material-icons icon">perm_identity</i>
+								Users
+							</a>
+						</li>
+						<li>
+							<a href="#" class="waves-effect waves-cyan">
+								<i class="material-icons icon">info</i>
+								About
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="add-nav hide-on-small-only">
+				<ul>
+					<li>
+						<a href="#">
+							<i class="material-icons icon">add_box</i>
+							Add new article
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons icon">open_in_browser</i>
+							Website
+						</a>
+					</li>
+				</ul>
+			</div>
+			<a href="#" data-activates="slide-out" class="nav-opener waves-effect waves-light btn-floating hide-on-large-only">
+				<span></span>
+				menu
+			</a>
+		</header>
+		<main id="main">
+			<div class="maincontent">
+				<div class="container">
+					<div class="row">
+						<div class="col s12">
+							<!-- user list -->
+							<div class="card lists">
+								<div class="card-action">
+									<a href="#newUser">Add</a>
+								</div>
+								<div class="card-content">
+									<table id="userList" class="display table" width="100%" cellspacing="0">
+									<thead>
+										<tr>
+											<th>
+												Username
+											</th>
+											<th>
+												Role
+											</th>
+											<th>
+												Email
+											</th>
+											<th>
+												Added
+											</th>
+											<th>
+												Action
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												Nabin Chaulagain
+											</td>
+											<td>
+												<span class="new badge">Data Entry</span>
+											</td>
+											<td>
+												Test@example.com
+											</td>
+											<td>
+												<time datetime="2017-02-07">07/02/2017</time>
+											</td>
+											<td>
+												<a href="#" class="btn-floating waves-effect edit">
+													<i class="material-icons icon">mode_edit</i>
+												</a>
+												<a href="#" class="btn-floating waves-effect delete">
+													<i class="material-icons icon">delete_forever</i>
+												</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- ./user list -->
+					</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- new user modal -->
+		<div id="newUser" class="modal new-user">
+			<form action="#" class="new-user-form">
+				<div class="modal-header">
+					<h4 class="modal-title">Add new User</h4>
+					<a href="#!" class="modal-close close grey-text grey-lighten-3">
+						<i class="material-icons">close</i>
+					</a>
+				</div>
+				<div class="modal-content">
+					<div class="input-field">
+						<label for="userName">Username</label>
+						<input type="text" id="userName" placeholder="Username">
+					</div>
+					<div class="input-field">
+						<select name="assignRole" id="assignRole">
+							<option value="Administrator">Admin</option>
+							<option value="Guest">Guest</option>
+							<option value="Data Entry">Data Entry</option>
+						</select>
+						<label for="assignRole">Role</label>
+					</div>
+					<div class="input-field">
+						<label for="email">Email</label>
+						<input type="email" id="email" placeholder="example@example.com">
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-action modal-close btn waves-effect waves-light">Add</a>
+					<a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat">Cancel</a>
+				</div>
+			</form>
+		</div>
+		<!-- ./new user modal -->
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-2.2.4/dt-1.10.15/datatables.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#userList').dataTable();
+			$("#userList").wrap( "<div class='table-responsive'></div>" );
+		})
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

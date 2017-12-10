@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+	<title>Update Article</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600|Roboto+Slab:300,400,700" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jq-2.2.4/dt-1.10.15/datatables.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div class="sidenav side-nav fixed" id="slide-out">
+				<nav class="main-nav">
+					<ul>
+						<li class="user-panel">
+							<span class="img-holder">
+								<img src="http://placehold.it/200x200.jpg" alt="" class="circle responsive-image">
+							</span>
+							<div class="popup-holder">
+								<a class='btn-flat waves-effect waves-light profile-opener' href='#' data-activates='profile-dropdown'>
+									Krishna Rai
+									<i class="material-icons right">arrow_drop_down</i>
+								</a>
+								<span class="user-role grey-text grey-darken-2">Administrator</span>
+								<ul id='profile-dropdown' class='dropdown-content'>
+									<li><a href="#">
+										<i class="material-icons">face</i>
+										Profile
+									</a></li>
+									<li><a href="#">
+										<i class="material-icons">settings</i>
+										Setting
+									</a></li>
+									<li>
+										<a href="#">
+											<i class="material-icons">keyboard_tab</i>
+											Logout
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="active">
+							<a href="#" class="waves-effect waves-cyan">
+								<i class="material-icons icon">view_quilt</i>
+								Dashboard
+							</a>
+						</li>
+						<li>
+							<a href="#" class="waves-effect waves-cyan">
+								<i class="material-icons icon">view_day</i>
+								Blog
+							</a>
+						</li>
+						<li>
+							<a href="#" class="waves-effect waves-cyan">
+								<i class="material-icons icon">perm_identity</i>
+								Users
+							</a>
+						</li>
+						<li>
+							<a href="#" class="waves-effect waves-cyan">
+								<i class="material-icons icon">info</i>
+								About
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="add-nav hide-on-small-only">
+				<ul>
+					<li>
+						<a href="#">
+							<i class="material-icons icon">add_box</i>
+							Add new article
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons icon">open_in_browser</i>
+							Website
+						</a>
+					</li>
+				</ul>
+			</div>
+			<a href="#" data-activates="slide-out" class="nav-opener waves-effect waves-light btn-floating hide-on-large-only">
+				<span></span>
+				menu
+			</a>
+		</header>
+		<main id="main">
+			<div class="container">
+				<div class="maincontent">
+					<form action="" class="new-article-form">
+						<fieldset>
+							<div class="row">
+								<div class="input-field col s12">
+									<label for="title">Article title</label>
+									<input type="text" id="title" placeholder="Article title">
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<label for="date">Date</label>
+									<input type="text" class="datepicker">
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<label for="description">Description</label>
+									<textarea id="description" class="materialize-textarea">Hello, World!</textarea>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12 content">
+									<label for="content">Content</label>
+									<textarea id="content"></textarea>
+								</div>
+							</div>
+							<button class="btn waves-effect waves-light" type="submit" name="action">Update
+								<i class="material-icons right">autorenew</i>
+							</button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<script src="plugin/tinymce/js/tinymce/tinymce.min.js"></script>
+	<script src="plugin/tinymce/js/tinymce/jquery.tinymce.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script src="js/tinyMCE.js"></script>
+</body>
+</html>

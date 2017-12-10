@@ -1,0 +1,23 @@
+//list reset
+%listreset{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+//transition
+%transition{
+	transition: all 0.3s ease-in-out;
+}
+
+//clearfix
+%clearfix{
+	&:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+.clearfix{
+	@extend %clearfix;
+}

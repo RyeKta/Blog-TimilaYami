@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+	<title>Profile</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600|Roboto+Slab:300,400,700" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div class="sidenav side-nav fixed" id="slide-out">
+				<nav class="main-nav">
+					<ul>
+						<li class="user-panel">
+							<span class="img-holder">
+								<img src="http://placehold.it/200x200.jpg" alt="" class="circle responsive-image">
+							</span>
+							<div class="popup-holder">
+								<a class='btn-flat waves-effect waves-light profile-opener' href='#' data-activates='profile-dropdown'>
+									Krishna Rai
+									<i class="material-icons right">arrow_drop_down</i>
+								</a>
+								<span class="user-role grey-text grey-darken-2">Administrator</span>
+								<ul id='profile-dropdown' class='dropdown-content'>
+									<li><a href="#">
+										<i class="material-icons">face</i>
+										Profile
+									</a></li>
+									<li><a href="#">
+										<i class="material-icons">settings</i>
+										Setting
+									</a></li>
+									<li>
+										<a href="#">
+											<i class="material-icons">keyboard_tab</i>
+											Logout
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="active">
+							<a href="#" class="waves-effect waves-cyan">
+								<i class="material-icons icon">view_quilt</i>
+								Dashboard
+							</a>
+						</li>
+						<li>
+							<a href="#" class="waves-effect waves-cyan">
+								<i class="material-icons icon">view_day</i>
+								Blog
+							</a>
+						</li>
+						<li>
+							<a href="#" class="waves-effect waves-cyan">
+								<i class="material-icons icon">perm_identity</i>
+								Users
+							</a>
+						</li>
+						<li>
+							<a href="#" class="waves-effect waves-cyan">
+								<i class="material-icons icon">info</i>
+								About
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="add-nav hide-on-small-only">
+				<ul>
+					<li>
+						<a href="#">
+							<i class="material-icons icon">add_box</i>
+							Add new article
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons icon">open_in_browser</i>
+							Website
+						</a>
+					</li>
+				</ul>
+			</div>
+			<a href="#" data-activates="slide-out" class="nav-opener waves-effect waves-light btn-floating hide-on-large-only">
+				<span></span>
+				menu
+			</a>
+		</header>
+		<main id="main">
+			<div class="profile-setting">
+				<div class="container">
+					<div class="row">
+						<div class="col s12">
+							<ul class="tabs tabset">
+								<li class="tab">
+									<a href="#tab1" class="grey-text grey-darken-3">General</a>
+								</li>
+								<li class="tab">
+									<a href="#tab2" class="grey-text grey-darken-3">Security</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div id="tab1">
+									<h2 class="header-title">General Account Setting</h2>
+									<ul class="collection">
+										<li class="collection-item">
+											<a href="#" class="list-link">
+												<div class="row">
+													<div class="col s5 m3 l3">
+														<h3 class="item-label">Name</h3>
+													</div>
+													<div class="col s7 m6 l6">
+														<span class="item-content grey-text grey-lighten-1">
+															<strong>Krishna Rai</strong>
+														</span>
+													</div>
+													<div class="col m3 l3 hide-on-small-only">
+														<div class="item-edit">
+															<i class="material-icons item-editIcon">edit</i>
+															<span class="item-editText">
+																Edit
+															</span>
+														</div>
+													</div>
+												</div>
+											</a>
+											<!-- Name edit block -->
+											<div class="edit-content">
+												<div class="grey lighten-3">
+													<form action="" class="change-form">
+														<div class="row">
+															<div class="col s12 m3">
+																<h3 class="item-label">Name</h3>
+															</div>
+															<div class="col s12 m7">
+																<div class="card">
+																	<div class="card-content">
+																		<div class="input-field">
+																			<label for="" form="oldName">Old name</label>
+																			<input type="text" id="oldName">
+																		</div>
+																		<div class="input-field">
+																			<label for="" form="newName">New Name</label>
+																			<input type="text" id="newName">
+																		</div>
+																	</div>
+																	<div class="card-action center">
+																		<a href="#" class="btn waves-effect">Save changes</a>
+																		<a href="#" class="btn waves-effect white black-text">Cancel</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+											<!-- ./Name edit block -->
+										</li>
+										<li class="collection-item">
+											<a href="#" class="list-link">
+												<div class="row">
+													<div class="col s5 m3 l3">
+														<h3 class="item-label">Username</h3>
+													</div>
+													<div class="col s7 m6 l6">
+														<span class="item-content grey-text grey-lighten-1">Administrator</span>
+													</div>
+													<div class="col m3 l3 hide-on-small-only">
+														<div class="item-edit">
+															<i class="material-icons item-editIcon">edit</i>
+															<span class="item-editText">Edit</span>
+														</div>
+													</div>
+												</div>
+											</a>
+											<!-- Username edit block -->
+											<div class="edit-content">
+												<div class="grey lighten-3">
+													<form action="" class="change-form">
+														<div class="row">
+															<div class="col s12 m3">
+																<h3 class="item-label">Username</h3>
+															</div>
+															<div class="col s12 m7">
+																<div class="card">
+																	<div class="card-content">
+																		<div class="input-field">
+																			<label for="" form="oldUserame">Old username</label>
+																			<input type="text" id="oldUsername">
+																		</div>
+																		<div class="input-field">
+																			<label for="" form="newUsername">New username</label>
+																			<input type="text" id="newUsername">
+																		</div>
+																	</div>
+																	<div class="card-action center">
+																		<a href="#" class="btn waves-effect">Save changes</a>
+																		<a href="#" class="btn waves-effect white black-text">Cancel</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+											<!-- ./Username edit block -->
+										</li>
+										<li class="collection-item">
+											<a href="#" class="list-link">
+												<div class="row">
+													<div class="col s5 m3 l3">
+														<h3 class="item-label">Email</h3>
+													</div>
+													<div class="col s7 m6 l6">
+														<span class="item-content grey-text grey-lighten-1">example@example.com</span>
+													</div>
+													<div class="col m3 l3 hide-on-small-only">
+														<div class="item-edit"><i class="material-icons item-editIcon">edit</i><span class="item-editText">Edit</span></div>
+													</div>
+												</div>
+											</a>
+											<!-- Email edit block -->
+											<div class="edit-content">
+												<div class="grey lighten-3">
+													<form action="" class="change-form">
+														<div class="row">
+															<div class="col s12 m3">
+																<h3 class="item-label">Email</h3>
+															</div>
+															<div class="col s12 m7">
+																<div class="card">
+																	<div class="card-content">
+																		<div class="input-field">
+																			<label for="" form="oldEmail">Old Email</label>
+																			<input type="text" id="oldEmail">
+																		</div>
+																		<div class="input-field">
+																			<label for="" form="newEmail">New Email</label>
+																			<input type="text" id="newEmail">
+																		</div>
+																	</div>
+																	<div class="card-action center">
+																		<a href="#" class="btn waves-effect">Save changes</a>
+																		<a href="#" class="btn waves-effect white black-text">Cancel</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+											<!-- ./Email edit block -->
+										</li>
+									</ul>
+								</div>
+								<div id="tab2" class="password-block">
+									<h2 class="header-title">Security &amp; login</h2>
+									<div class="card">
+										<div class="card-content">
+											<h3 class="card-title">Change Password</h3>
+											<form action="" class="password-form">
+												<div class="row">
+													<div class="input-field col s12">
+														<label for="oldPassword">Old Password</label>
+														<input type="password" id="oldPassword">
+													</div>
+												</div>
+												<div class="row">
+													<div class="input-field col s12">
+														<label for="newPassword">New Password</label>
+														<input type="password" id="newPassword">
+													</div>
+												</div>
+												<div class="row">
+													<div class="input-field col s12">
+														<label for="reNewPassword">Retype Password</label>
+														<input type="password" id="reNewPassword">
+													</div>
+												</div>
+												<div class="card-action">
+													<a href="#" class="forgot-password">Forgot your password?</a>
+													<a href="#" class="btn waves-effect waves-cyan right">
+														Save Changes
+													</a>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	</body>
+	</html>

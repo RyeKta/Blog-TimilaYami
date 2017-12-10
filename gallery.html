@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+	<title>Gallery</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700|Roboto+Slab:300,400,700" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+	<!-- Header -->
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col l8 offset-l4">
+					<nav class="navbar">
+						<a href="#" class="nav-opener">
+							<span></span>
+						</a>
+						<div class="drop">
+							<ul id="nav">
+								<li class="active">
+									<a href="#">Home</a>
+								</li>
+								<li>
+									<a href="#">Archieve</a>
+								</li>
+								<li>
+									<a href="#">About</a>
+								</li>
+								<li>
+									<a href="#">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main id="main" role="main">
+		<!-- Tab -->
+		<div class="tab-block">
+			<div class="tabset">
+				<div class="container">
+					<!-- Tab navigaton -->
+					<ul class="tabs">
+						<li class="tab"><a href="#photoGallery"><i class="icon material-icons">collections</i> <span class="hide-on-med-and-down">Images</span></a></li>
+						<li class="tab"><a href="#videoGallery" class="active"><i class="icon material-icons">video_library</i><span class="hide-on-med-and-down">Video</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- Tab content -->
+			<div class="container">
+				<ul class="tab-content">
+					<!-- Image gallery Tab Content -->
+					<li id="photoGallery">
+						<ul class="thumb-list row">
+							<!-- Album cover -->
+							<li class="screenshot col s6 m4 l3">
+								<div class="card hover-reveal">
+									<!-- Album cover image -->
+									<div class="card-content">
+										<div class="card-image">
+											<a href="#" class="activator">
+												<img src="https://placehold.it/200x150.jpg" alt="">
+											</a>
+										</div>
+									</div>
+									<!-- Album description -->
+									<a class="card-reveal" href="#">
+										<!-- album title -->
+										<span class="card-title">card title</span>
+										<!-- Album short description -->
+										<span class="comment">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, necessitatibus.
+										</span>
+										<em class="timestamp">November 23, 2017</em>
+									</a>
+								</div>
+								<!-- Album title -->
+								<h2 class="thumb-title hide-on-med-and-down">
+									<a href="#">Image heading</a>
+								</h2>
+							</li>
+							<li class="screenshot col s6 m4 l3">
+								<div class="card hover-reveal">
+									<div class="card-content">
+										<div class="card-image">
+											<a href="#" class="activator">
+												<img src="https://placehold.it/200x150.jpg" alt="">
+											</a>
+										</div>
+									</div>
+									<a class="card-reveal" href="#">
+										<span class="card-title">card title</span>
+										<span class="comment">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, necessitatibus.
+										</span>
+										<em class="timestamp">November 23, 2017</em>
+									</a>
+								</div>
+								<h2 class="thumb-title hide-on-med-and-down">
+									<a href="#">Image heading</a>
+								</h2>
+							</li>
+							<li class="screenshot col s6 m4 l3">
+								<div class="card hover-reveal">
+									<div class="card-content">
+										<div class="card-image">
+											<a href="#" class="activator">
+												<img src="https://placehold.it/200x150.jpg" alt="">
+											</a>
+										</div>
+									</div>
+									<a class="card-reveal" href="#">
+										<span class="card-title">card title</span>
+										<span class="comment">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, necessitatibus.
+										</span>
+										<em class="timestamp">November 23, 2017</em>
+									</a>
+								</div>
+								<h2 class="thumb-title hide-on-med-and-down">
+									<a href="#">Image heading</a>
+								</h2>
+							</li>
+							<li class="screenshot col s6 m4 l3">
+								<div class="card hover-reveal">
+									<div class="card-content">
+										<div class="card-image">
+											<a href="#" class="activator">
+												<img src="https://placehold.it/200x150.jpg" alt="">
+											</a>
+										</div>
+									</div>
+									<a class="card-reveal" href="#">
+										<span class="card-title">card title</span>
+										<span class="comment">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, necessitatibus.
+										</span>
+										<em class="timestamp">November 23, 2017</em>
+									</a>
+								</div>
+								<h2 class="thumb-title hide-on-med-and-down">
+									<a href="#">Album Title</a>
+								</h2>
+							</li>
+						</ul>
+					</li>
+					<!-- VIdeo gallery Tab Content -->
+					<li id="videoGallery">
+						<div class="top-block">
+							<div class="row">
+								<div class="input-field col s12">
+									<form action="" class="search-form">
+										<i class="material-icons prefix">search</i>
+										<input type="text" placeholder="Search">
+									</form>
+								</div>
+							</div>
+						</div>
+						<!-- Featured video -->
+						<div class="featured-video-container">
+							<div class="featured-video-player same-height">
+								<iframe src="https://www.youtube.com/embed/hN-Xdk1HqYU?ecver=2" frameborder="0" gesture="media" allowfullscreen></iframe>
+								<!-- <a href="#" class="play-btn"><i class="icon-play material-icons">play_arrow</i></a>
+								<div class="thumbnail-holder">
+									<img src="https://placehold.it/640x480.jpg" alt="">
+								</div> -->
+							</div>
+							<!-- Featured video description -->
+							<div class="featured-video-content same-height">
+								<!-- Featured video title -->
+								<h2 class="video-title">
+									<a href="#">Title of the video</a>
+								</h2>
+								<div class="content-holder">
+									<div class="meta">
+										<em class="date-time">27 November, 2017</em>
+									</div>
+									<!-- Featured video short description -->
+									<div class="excerpt">
+										<p>Some description about the video uploaded here</p>
+									</div>
+									<a href="#" class="more">read more</a>
+								</div>
+							</div>
+						</div>
+						<!-- Other video -->
+						<section class="uploaded-video-listing">
+							<h2><a href="#">uploads</a></h2>
+							<div class="row">
+								<!-- Single Video Block -->
+								<div class="col m6 l4 xl3">
+									<div class="uploaded-video-item">
+										<div class="card">
+											<!-- Video thumbnail -->
+											<div class="card-image">
+												<a href="#"><img src="https://placehold.it/320x240.jpg" alt=""></a>
+												<a href="#" class="play-btn"><i class="icon-play material-icons">play_arrow</i></a>
+											</div>
+											<!-- Video info -->
+											<div class="card-content">
+												<div class="meta">
+													<em class="date-time">29 November,2017</em>
+													<h3 class="card-title"><a href="#">Video tile here</a></h3>
+												</div>
+												<!-- video short description -->
+												<div class="excerpt">
+													<p>This is just a simple description about video. This text is longer than any other blocks </p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col m6 l4 xl3">
+									<div class="uploaded-video-item">
+										<div class="card">
+											<div class="card-image">
+												<a href="#"><img src="https://placehold.it/320x240.jpg" alt=""></a>
+												<a href="#" class="play-btn"><i class="icon-play material-icons">play_arrow</i></a>
+											</div>
+											<div class="card-content">
+												<div class="meta">
+													<em class="date-time">29 November,2017</em>
+													<h3 class="card-title"><a href="#">Video tile1 here</a></h3>
+												</div>
+												<div class="excerpt">
+													<p>This is just a simple description about video</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col m6 l4 xl3">
+									<div class="uploaded-video-item">
+										<div class="card">
+											<div class="card-image">
+												<a href="#"><img src="https://placehold.it/320x240.jpg" alt=""></a>
+												<a href="#" class="play-btn"><i class="icon-play material-icons">play_arrow</i></a>
+											</div>
+											<div class="card-content">
+												<div class="meta">
+													<em class="date-time">29 November,2017</em>
+													<h3 class="card-title"><a href="#">Video tile3 here</a></h3>
+												</div>
+												<div class="excerpt">
+													<p>This is just a simple description about video</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col m6 l4 xl3">
+									<div class="uploaded-video-item">
+										<div class="card">
+											<div class="card-image">
+												<a href="#"><img src="https://placehold.it/320x240.jpg" alt=""></a>
+												<a href="#" class="play-btn"><i class="icon-play material-icons">play_arrow</i></a>
+											</div>
+											<div class="card-content">
+												<div class="meta">
+													<em class="date-time">29 November,2017</em>
+													<h3 class="card-title"><a href="#">I am of same height</a></h3>
+												</div>
+												<div class="excerpt">
+													<p>One Line</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</main>
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="footer-holder">
+			<div class="container">
+				<span class="copyright">
+					&copy; 2015-2017 Timila Yami Thapa
+				</span>
+				<ul class="nav">
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">About</a>
+					</li>
+					<li>
+						<a href="#">Archieve</a>
+					</li>
+					<li>
+						<a href="#">Contact me</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<script src="js/jquery.main.js"></script>
+</body>
+</html>

@@ -3,6 +3,7 @@
 @import 'base/typography';
 @import 'base/mixins';
 @import 'vendor/media';
+@import 'vendor/rrssb';
 @import 'base/helpers';
 
 /* devices viewport width starts at:*/
@@ -333,7 +334,7 @@ $breakpoints: (
          }
       }
       .meta{
-         @include media(">=phone"){
+         @include media(">s-phone"){
             padding: 0 1.286em 0 0;
             float: left;
             width: 33%;
@@ -454,6 +455,91 @@ $breakpoints: (
             font-style: italic;
             font-size: 0.8em;
             margin-left: 0;
+         }
+      }
+      .share-btn-group{
+         h2{
+            @include font(1em, 1, 600);
+            color: saturate($husk, 35%);
+            margin: 0 0 1.28571em;
+            letter-spacing: 1px;
+         }
+      }
+      .rrssb-buttons{
+         li{
+            @include media('>s-phone'){
+               width: 100% !important;
+               margin-bottom: 9px;
+               display: block;
+               float: none;
+            }
+            &.small{
+               a{
+                  padding: 11px 7px 12px 27px;
+                  .rrssb-icon{
+                     position: absolute;
+                     overflow: visible;
+                     display: block;
+                     left: 10px;
+                     top: 0;
+                     width: 10%;
+                  }
+                  .rrssb-text{
+                     visibility: visible;
+                  }
+               }
+            }
+         }
+         .rrssb-text{
+            @include font(12px,1,700);
+            font-family: $base-font-sans-serif;
+            letter-spacing: 1px;
+         }
+      }
+   }
+   .pagination-block{
+      text-align: center;
+      padding: 1.28571em 0 2.5714em;
+      .pagination{
+         background-color: $white;
+         display: inline-block;
+         vertical-align: top;
+         border-radius: 2.57142em;
+         letter-spacing: -5px;
+         margin: 0;
+         @include media('<=desktop'){
+            width: auto;
+         }
+         li{
+            letter-spacing: 0;
+            border-radius: 0;
+            border-left: 1px solid lighten($astronaut,65%);
+            @include media('>s-phone'){
+               height: 3.07142em;
+            }
+            &:first-child{
+               border-left: none;
+            }
+            &.active{
+               -webkit-box-shadow: 1px 1px 16px rgba(0,0,0,0.2)inset;
+                       box-shadow: 1px 1px 16px rgba(0,0,0,0.2)inset;
+               a{
+                  color: $white;
+               }
+            }
+            a{
+               color: $silvertree;
+               font-weight: 500;
+               @include media('>s-phone'){
+                  padding: 0 0.8889em;
+                  line-height: 2.3888em;
+               }
+            }
+            i{
+               @include media('>s-phone'){
+                  line-height: 1.4333em;
+               }
+            }
          }
       }
    }
@@ -1023,6 +1109,9 @@ $breakpoints: (
             text-decoration: none;
             color: #eaeef7;
          }
+      }
+      .share-btn-group{
+         padding: 1.28571em 0;
       }
       .subtitle{
          @include font(1em, 2.572, 600);
